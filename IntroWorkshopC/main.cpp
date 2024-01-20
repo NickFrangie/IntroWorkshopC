@@ -163,7 +163,6 @@ int main()
     *   
     *   TASK:
     *       Convert Shape into an abstract class by adding a pure virtual function "getArea" to it.
-    *       Then override the function in Rectangle and Triangle to calculate the area of the shape.
     *       Create a Shape array and store a Rectangle and a Triangle object in it.
     *       Then call getArea on the objects in the array. What happens now?
     */
