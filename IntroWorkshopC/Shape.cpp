@@ -6,3 +6,8 @@ float Shape::getWidth()
 {
 	return width;
 }
+
+float Shape::getHeight()
+{
+	return height;
+}

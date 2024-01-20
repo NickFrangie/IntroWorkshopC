@@ -8,10 +8,12 @@ class Shape
 	public:
 		// These are function declarations. They are useful for declaring functions defined in Source files.
 		float getWidth();	
+		float getHeight();
 
 	// Private members are only accessible from within the class.
 	private:
 		// These are member variables. They are useful for storing data for specific instances of a class, called objects.
 		float width;
+		float height;
 };
 
