@@ -6,6 +6,8 @@ class Shape
 {
 	// Public members are accessible from outside the class.
 	public:
+		Shape(float width, float height);
+		~Shape();
 		// These are function declarations. They are useful for declaring functions defined in Source files.
 		float getWidth();	
 		float getHeight();

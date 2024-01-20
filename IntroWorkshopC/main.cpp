@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Shape.h"
 
 // This is a function declaration. It tells the compiler that the function exists, but does not define it.
 // This is useful for declaring functions that are defined later in the file, or in another file.
@@ -19,7 +20,7 @@ int main()
 
     // Part 1: Basic Syntax
     // Review the syntax of the following statements. Change runBasicSyntax to true to run the code.
-    bool runBasicSyntax = true;
+    bool runBasicSyntax = false;
     if (runBasicSyntax) {
         // Variable Declarations
         int x = 5;
@@ -135,6 +136,8 @@ int main()
     *       Then add a destructor to the Shape class that prints "Shape destroyed!" to the console.
     *       Create a Shape object down below using your constructor, store it in a pointer, and then destroy it.
     */
+    Shape* shape = new Shape(1, 2);
+    delete shape;
 
     
     // Part 5: Inheritance
