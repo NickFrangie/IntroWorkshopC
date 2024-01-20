@@ -19,7 +19,7 @@ int main()
 
     // Part 1: Basic Syntax
     // Review the syntax of the following statements. Change runBasicSyntax to true to run the code.
-    bool runBasicSyntax = true;
+    bool runBasicSyntax = false;
     if (runBasicSyntax) {
         // Variable Declarations
         int x = 5;
