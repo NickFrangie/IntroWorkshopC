@@ -142,6 +142,8 @@ int main()
     /*
     *   TASK:
     *       Create two new classes, Rectangle and Triangle, that inherit from Shape.
+    *       Although you will need to create a constructor for each new class that takes width and height arguments,
+    *       pass those values to the Shape constructor using Constructor Chaining.
     *       Add a public member function "getArea" to each class which calculates the area of the shape.
     *       Create a Rectangle and a Triangle object down below, store them in pointers, and print their areas.
     *       Store the Rectangle and Triangle objects in a Shape array. 
