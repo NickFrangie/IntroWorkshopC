@@ -138,8 +138,8 @@ int main()
     *       Then add a destructor to the Shape class that prints "Shape destroyed!" to the console.
     *       Create a Shape object down below using your constructor, store it in a pointer, and then destroy it.
     */
-    Shape* shape = new Shape(1, 2);
-    delete shape;
+    //Shape* shape = new Shape(1, 2);
+    //delete shape;
 
     
     // Part 5: Inheritance
@@ -148,7 +148,7 @@ int main()
     *   TASK:
     *       Create two new classes, Rectangle and Triangle, that inherit from Shape.
     *       Although you will need to create a constructor for each new class that takes width and height arguments,
-            pass those values to the Shape constructor using Constructor Chaining.
+    *       pass those values to the Shape constructor using Constructor Chaining.
     *       Add a public member function "getArea" to each class which calculates the area of the shape.
     *       Create a Rectangle and a Triangle object down below, store them in pointers, and print their areas.
     *       Store the Rectangle and Triangle objects in a Shape array. 
@@ -178,10 +178,14 @@ int main()
     *   
     *   TASK:
     *       Convert Shape into an abstract class by adding a pure virtual function "getArea" to it.
-    *       Then override the function in Rectangle and Triangle to calculate the area of the shape.
     *       Create a Shape array and store a Rectangle and a Triangle object in it.
     *       Then call getArea on the objects in the array. What happens now?
     */
+    for (int i = 0; i < 2; i++)
+    {
+        // Cannot call getArea on Shape objects because Shape does not have a getArea function.
+        std::cout << shapes[i]->getArea() << std::endl;
+    }
 }
 
 

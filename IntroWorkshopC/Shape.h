@@ -11,6 +11,10 @@ class Shape
 		// These are function declarations. They are useful for declaring functions defined in Source files.
 		float getWidth();	
 		float getHeight();
+		// Pure virtual functions are functions that must be implemented by child classes.
+		// They are useful for creating abstract classes.
+		// The = 0 syntax indicates that this function is pure virtual.
+		virtual float getArea() = 0;
 
 	// Private members are only accessible from within the class.
 	private:
