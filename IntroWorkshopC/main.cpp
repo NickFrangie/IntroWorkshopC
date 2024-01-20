@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Shape.h"
+#include "Rectangle.h"
+#include "Triangle.h"
 
 // This is a function declaration. It tells the compiler that the function exists, but does not define it.
 // This is useful for declaring functions that are defined later in the file, or in another file.
@@ -145,11 +147,23 @@ int main()
     /*
     *   TASK:
     *       Create two new classes, Rectangle and Triangle, that inherit from Shape.
+    *       Although you will need to create a constructor for each new class that takes width and height arguments,
+            pass those values to the Shape constructor using Constructor Chaining.
     *       Add a public member function "getArea" to each class which calculates the area of the shape.
     *       Create a Rectangle and a Triangle object down below, store them in pointers, and print their areas.
     *       Store the Rectangle and Triangle objects in a Shape array. 
     *       What happens if you try to print the areas of the objects in the Shape array?
     */
+    Rectangle* rectangle = new Rectangle(4, 2);
+    std::cout << rectangle->getArea() << std::endl;
+    Triangle* triangle = new Triangle(4, 2);
+    std::cout << triangle->getArea() << std::endl;
+    Shape* shapes[] = { rectangle, triangle };
+    for (int i = 0; i < 2; i++)
+    {
+        // Cannot call getArea on Shape objects because Shape does not have a getArea function.
+		//std::cout << shapes[i]->getArea() << std::endl;
+	}
 
 
     // Part 6: Abstraction
